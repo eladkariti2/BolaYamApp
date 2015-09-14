@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android" >
-
-    <solid android:color="@color/navigation_drawer_separator_color" />
-
-</shape><!-- From: file:/C:/Users/elad/Desktop/project/BolaYamAppAndroidStudio/BolaYam/res/drawable/navigation_drawer_separator.xml -->

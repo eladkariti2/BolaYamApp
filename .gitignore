@@ -6,7 +6,8 @@
 .DS_Store
 /build
 /captures
-
+/BolaYam/build
+BolaYam/build/
 
 /BolaYam/gen
 /BolaYam/bin

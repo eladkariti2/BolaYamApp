@@ -150,7 +150,7 @@ public class SettingsFragment extends Fragment {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				FacebookUtil.clearFBToken(getActivity());
+				FacebookUtil.clearToken();
 				Intent i = new Intent(getActivity(),FacebookLoginActivity.class);
 				startActivityForResult(i,0);				
 			}

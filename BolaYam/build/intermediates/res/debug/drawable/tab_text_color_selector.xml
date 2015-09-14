@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-
-    <item android:state_pressed="true" android:color="#FF111111"/>
-    <item android:state_selected="true" android:color="#00ccff"/>
-    <item android:color="#ffffff"/>
-
-</selector><!-- From: file:/C:/Users/elad/Desktop/project/BolaYamAppAndroidStudio/BolaYam/res/drawable/tab_text_color_selector.xml -->
