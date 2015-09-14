@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval" >
+
+    <stroke
+        android:width="3dp"
+        android:color="#4a3f43" />
+
+    <solid android:color="#61a2fa" />
+
+</shape><!-- From: file:/C:/Users/elad/Desktop/project/BolaYamAppAndroidStudio/BolaYam/res/drawable/feed_entry_oval_bg.xml -->

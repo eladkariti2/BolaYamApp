@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="44dp"
+    android:layout_height="85dp"
+    android:orientation="vertical" >
+
+    <!-- fake divider -->
+
+    <LinearLayout
+        android:id="@+id/fake_divider"
+        android:layout_width="4dp"
+        android:layout_height="85dp"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal"
+        android:background="@android:color/transparent" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@id/fake_divider"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/pic_1"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="4dp" >
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/pic_2"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+    </LinearLayout>
+
+</RelativeLayout><!-- From: file:/C:/Users/elad/Desktop/project/BolaYamAppAndroidStudio/BolaYam/res/layout/friend_item_horizontal_view.xml -->

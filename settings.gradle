@@ -1,1 +1,3 @@
-include ':BolaYam'
+include ':BolaYam',':App_sdk', ':ViewPagerIndicator'
+
+project(':ViewPagerIndicator').projectDir = new File('App_sdk/external projects/Android-ViewPagerIndicator/library')

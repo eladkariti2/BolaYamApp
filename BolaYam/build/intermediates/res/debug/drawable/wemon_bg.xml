@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <solid android:color="#e42138" />
+
+    <corners android:radius="10dip" />
+
+</shape><!-- From: file:/C:/Users/elad/Desktop/project/BolaYamAppAndroidStudio/BolaYam/res/drawable/wemon_bg.xml -->

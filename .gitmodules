@@ -1,0 +1,3 @@
+[submodule "App_sdk"]
+	path = App_sdk
+	url = git@github.com:eladkariti2/App_sdk.git

@@ -25,7 +25,6 @@ import com.application.imageholders.ImageHolderBuilder;
 import com.application.picasoimageloader.PicasoHalper;
 import com.application.ui.RoundedImageView;
 import com.application.utils.OSUtil;
-import com.google.android.gms.internal.di;
 
 public class FriendsListAdapter extends BaseAdapter {
 

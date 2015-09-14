@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <TextView
+        android:id="@+id/get_lucky_text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="Get Lucky"
+        android:textColor="#000000" />
+
+    <com.application.ui.APWebView
+        android:id="@+id/get_lucky_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/get_lucky_text" />
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true" >
+    </ProgressBar>
+    
+    <ImageView android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/game_bg"/>
+
+</RelativeLayout><!-- From: file:/C:/Users/elad/Desktop/project/BolaYamAppAndroidStudio/BolaYam/res/layout/get_lucky_layout.xml -->

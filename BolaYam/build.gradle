@@ -1,11 +1,11 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 21
-    buildToolsVersion "22.0.0"
+    compileSdkVersion "Google Inc.:Google APIs:18"
+    buildToolsVersion "22.0.1"
 
     defaultConfig {
-        applicationId "androidstudio.example.com.testapp"
+        applicationId "com.app.bolayam"
         minSdkVersion 14
         versionCode 1
         versionName "5.1"
@@ -13,7 +13,11 @@ android {
     }
     sourceSets {
         main {
-
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            resources.srcDirs = ['src']
+            res.srcDirs = ['res']
+            aidl.srcDirs = ['src']
             assets.srcDirs = ['assets']
         }
     }
@@ -34,9 +38,7 @@ android {
 }
 
 dependencies {
+    compile project(':App_sdk')
+    compile project(':ViewPagerIndicator')
 
-    compile project(':android_generic_app')
-
-    compile fileTree(dir: 'libs', include: '*.jar')
-    compile 'com.android.support:appcompat-v7:22.2.0'
 }
