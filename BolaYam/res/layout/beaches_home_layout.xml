@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.app.bolayam"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/choose_beache_text"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_alignParentTop="true"
+        android:background="#118cff"
+        android:gravity="center"
+        android:text="@string/choose_beach_text"
+        android:textColor="#ffffff"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/beach_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/choose_beache_text"
+        android:background="@color/app_bg_color"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@color/app_bg_color"
+        android:dividerHeight="10dp"
+        android:listSelector="@drawable/navigation_drawer_selector"
+        android:padding="10dp" >
+    </ListView>
+
+</RelativeLayout>

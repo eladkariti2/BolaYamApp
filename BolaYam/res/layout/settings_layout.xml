@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/settings_title_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/settings_page"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/settings_title_text"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/logout_fb_container"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/settings_item_bg_selector"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/fb_icon"
+                android:layout_width="42dp"
+                android:layout_height="29dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/facebook_logo_login" />
+
+            <TextView
+                android:id="@+id/fb_logout_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/fb_icon"
+                android:text="@string/fb_logout_text"
+                android:textColor="#000000" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e3e3e3" >
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/beaches_area_picker"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/settings_item_bg_selector"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/fb_icon2"
+                android:layout_width="42dp"
+                android:layout_height="29dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/facebook_logo_login" />
+
+            <RelativeLayout
+                android:id="@+id/area_description_button"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentLeft="true" >
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="20dp"
+                    android:layout_centerInParent="true"
+                    android:duplicateParentState="false"
+                    android:src="@drawable/info_icon_selector" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/fb_icon2"
+                android:layout_toRightOf="@id/area_description_button" >
+
+                <TextView
+                    android:id="@+id/sout_area"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/settings_beach_area_sout"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/center_area"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/settings_beach_area_center"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/north_area"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/settings_beach_area_north"
+                    android:textColor="#000000" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/beaches_area_description"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/settings_item_bg_selector"
+            android:padding="10dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/beaches_area_description_text" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e3e3e3" >
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/temp3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/settings_item_bg_selector"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/fb_icon3"
+                android:layout_width="42dp"
+                android:layout_height="29dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/facebook_logo_login" />
+
+            <Switch
+                android:id="@+id/game_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/fb_icon3" />
+
+            <RelativeLayout
+                android:id="@+id/game_description_button"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentLeft="true" >
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="20dp"
+                    android:layout_centerInParent="true"
+                    android:duplicateParentState="true"
+                    android:src="@drawable/info_icon_selector" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/game_description"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/settings_item_bg_selector"
+            android:padding="10dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="dfksjfkl djfkdljflkdsj fksdjfksd jfskdjf ksd;" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

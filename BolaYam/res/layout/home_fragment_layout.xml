@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#46b1f9"
+    android:orientation="vertical" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/main_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/main_tabs" >
+    </android.support.v4.view.ViewPager>
+
+    <com.app.bolayam.view.APTabPageIndicator
+        android:id="@+id/main_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        style="@attr/vpiDefaultTabPageIndicatorStyle"
+        android:layout_alignParentBottom="true" >
+    </com.app.bolayam.view.APTabPageIndicator>
+
+</RelativeLayout>

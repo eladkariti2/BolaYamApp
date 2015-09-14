@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="user_name_text_size">20dp</dimen>
+    <dimen name="change_account_text_size">16dp</dimen>
+
+    <!-- Beach list item -->
+    <dimen name="beach_name_text_size">16dp</dimen>
+    <dimen name="beach_subtitle_text_size">9dp</dimen>
+    <dimen name="man_women_ammount_text_size">16dp</dimen>
+    <dimen name="man_women_ammount_subtext_size">10dp</dimen>
+    
+    <!-- Main Layout Bolayam -->
+      <dimen name="navigation_drawer_width">280dp</dimen>
+    
+
+</resources>

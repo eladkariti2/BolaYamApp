@@ -1,0 +1,33 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppBaseTheme" parent="android:Theme.Light"></style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme"></style>
+
+    <style name="homeTabPageIndicator" parent="Widget.TabPageIndicator">
+        <item name="android:minWidth">100dp</item>
+        <item name="android:maxWidth">500dp</item>
+        <item name="android:showDividers">middle</item>
+        <item name="android:divider">@drawable/tab_divider</item>
+        <item name="android:dividerHeight">30dp</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:background">@drawable/bottom_pager_bg</item>
+    </style>
+
+    <style name="TextAppearance.TabPageIndicator" parent="Widget">
+        <item name="android:ellipsize">middle</item>
+        <item name="android:gravity">center</item>
+        <item name="android:inputType">textCapCharacters</item>
+    </style>
+
+    <style name="homeTabStyle" parent="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+        <item name="vpiDefaultTabPageIndicatorStyle">@style/homeTabPageIndicator</item>
+    </style>
+
+    <style name="TopBarButton">
+        <item name="android:background">@drawable/generic_simple_selector</item>
+    </style>
+
+</resources>

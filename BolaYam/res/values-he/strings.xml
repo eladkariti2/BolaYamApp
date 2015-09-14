@@ -1,0 +1,62 @@
+<resources>
+
+    <!-- Main Activity -->
+    <string name="feed_list">פוסטים</string>
+    <string name="home_feed">רשימת חופים</string>
+
+    <!-- Menu -->
+    <string name="feed_page">מסך פוסטים</string>
+    <string name="beaches_page">מסך חופים</string>
+    <string name="settings">הגדרות</string>
+    <string name="about">אודות</string>
+    <string name="parking">חניה</string>
+    <string name="share">שיתוף</string>
+
+    <!-- Facebook login -->
+    <string name="facebook_login">התחבר עם פייסבוק</string>
+
+    <!-- facebook posts layout -->
+    <string name="take_photo">צלם תמונה</string>
+    <string name="write_status">כתוב סטטוס</string>
+    <string name="no_status">אין סטטוסים</string>
+    <string name="first_to_post_status">תהיה הראשון לרשום סטטוס ...</string>
+
+    <!-- beach layout -->
+    <string name="checkin">checkin</string>
+    <string name="like">likes</string>
+    <string name="comments">commens</string>
+
+    <!-- map fragment -->
+
+    <string name="map_error">מצטערים! ארעה שגיאה</string>
+    <string name="setParking">Set Parking</string>
+    <string name="parking_option">Parking Options</string>
+
+    <!-- Beach description -->
+    <string name="wave_height_title">גובה הגלים:</string>
+    <string name="flag_title">צבע דגל:</string>
+    <string name="temparature_title">טמפרטורה:</string>
+    <string name="wemons_text">נשים</string>
+    <string name="mans_text">גברים</string>
+    <string name="choose_beach_text">בחר/י את החוף שבא לך</string>
+    <string name="friends_at_beach">חברים שכרגע בחוף</string>
+    <string name="full_friends_list">הרשימה המלאה >></string>
+    <string name="beach_general_description_title">מידע כללי</string>
+    <string name="go_to_profile_text">הכנס לפרופיל</string>
+    <string name="my_friends_text">החברים שלי</string>
+
+    <!-- Settings -->
+    <string name="settings_page">מסך הגדרות</string>
+    <string name="fb_logout_text">צא מפייסבוק</string>
+    <string name="settings_beach_area">איזור</string>
+    <string name="settings_beach_area_north">צפון</string>
+    <string name="settings_beach_area_sout">דרום</string>
+    <string name="settings_beach_area_center">מרכז</string>
+    <string name="beaches_area_description_text">בחר/י את האזור של החופים שתרצה/י לעקוב אחריהם ...</string>
+
+    <!-- Parking -->
+    <string name="go_to_parking">נווט לחניה</string>
+    <string name="parking_saved">החניה נשמרה</string>
+    <string name="add_parkign_comment">הוסף הערה ...</string>
+
+</resources>
