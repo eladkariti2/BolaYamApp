@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId "com.app.bolayam"
-        minSdkVersion 16
+        minSdkVersion 14
         versionCode 1
         versionName "5.1"
         multiDexEnabled false
