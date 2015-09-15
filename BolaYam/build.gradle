@@ -4,6 +4,8 @@ android {
     compileSdkVersion "Google Inc.:Google APIs:18"
     buildToolsVersion "22.0.1"
 
+    compileOptions.encoding = 'UTF-8'
+
     defaultConfig {
         applicationId "com.app.bolayam"
         minSdkVersion 16
