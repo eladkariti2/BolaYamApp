@@ -30,13 +30,14 @@ import com.app.bolayam.util.BolaYamConst;
 import com.app.bolayam.view.BolaYamDrawerLayout;
 import com.app.bolayam.view.SideMenuBolaYam;
 import com.app.bolayam.view.SideMenuBolaYam.NavMenuItemType;
+import com.application.base.BaseFragmentActivity;
 import com.application.facebook.model.FBProfilePic;
 import com.application.facebook.util.FacebookUtil;
 import com.application.picasoimageloader.PicasoHalper;
 import com.flurry.android.ads.FlurryAdBanner;
 import com.squareup.picasso.Picasso;
 
-public class MainFragmentActivity extends FragmentActivity {
+public class MainFragmentActivity extends BaseFragmentActivity {
 
 	protected BolaYamDrawerLayout mNavigationDrawer;
 	protected View mToggleDrawerButton;
