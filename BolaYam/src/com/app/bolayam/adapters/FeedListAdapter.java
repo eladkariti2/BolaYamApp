@@ -4,8 +4,10 @@ import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.Date;
 
+import android.app.Activity;
 import android.content.Context;
 import android.graphics.Color;
+import android.hardware.Camera;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -19,6 +21,7 @@ import com.app.bolayam.activities.FeedItemActivity.FeetItemType;
 import com.application.activities.FeedPostDetailsActivity;
 import com.application.adapters.ImageBaseAdapter;
 import com.application.facebook.loader.APLikeRequest;
+import com.application.facebook.permissions.APPermissionsType;
 import com.application.facebook.util.FacebookUtil;
 import com.application.imageholders.FBPostHolder;
 import com.application.imageholders.ImageHolder;
@@ -26,6 +29,7 @@ import com.application.imageholders.ImageHolderBuilder;
 import com.application.listener.AsyncTaskListener;
 import com.application.picasoimageloader.PicasoHalper;
 import com.application.utils.APUiUtil;
+import com.application.utils.CustomImageLoader;
 import com.application.utils.StringUtil;
 
 public class FeedListAdapter extends ImageBaseAdapter{
@@ -92,7 +96,8 @@ public class FeedListAdapter extends ImageBaseAdapter{
 			if(holder.getWidth() > 0 && holder.getHeight() > 0){
 				APUiUtil.adjustImageToFullScreenWidth(pictuerIV, holder.getWidth(), holder.getHeight());
 			}
-			PicasoHalper.loadImage(mContext, pictuerIV, postPicture);
+			CustomImageLoader loader = new CustomImageLoader(pictuerIV,holder);
+			loader.loadImage();
 			pictuerIV.setOnClickListener(new OnClickListener() {
 				
 				@Override
@@ -151,12 +156,12 @@ public class FeedListAdapter extends ImageBaseAdapter{
 			// TODO Auto-generated method stub
 			final FBPostHolder holder = (FBPostHolder)v.getTag();
 			final boolean isLiked = Boolean.parseBoolean(holder.getExtension(ImageHolderBuilder.ME_LIKED_POST));
-			APLikeRequest req = new APLikeRequest(holder.getID(),new AsyncTaskListener<Boolean>() {
+			FacebookUtil.createLike((Activity)mContext,holder.getID(), APPermissionsType.Feed,new AsyncTaskListener<Boolean>() {
 
 				@Override
 				public void handleException(Exception e) {
 					// TODO Auto-generated method stub
-					
+
 				}
 
 				@Override
@@ -164,18 +169,17 @@ public class FeedListAdapter extends ImageBaseAdapter{
 					// TODO Auto-generated method stub
 					mView.setBackgroundColor(!isLiked ? Color.RED : Color.BLUE);
 					holder.addExtension(ImageHolderBuilder.ME_LIKED_POST,!isLiked +"");
-					holder.setLikesNumber( !isLiked ?holder.getLikesNumber() + 1 : holder.getLikesNumber() - 1);  
+					holder.setLikesNumber( !isLiked ?holder.getLikesNumber() + 1 : holder.getLikesNumber() - 1);
 					notifyDataSetChanged();
 				}
 
 				@Override
 				public void onTaskStart() {
 					// TODO Auto-generated method stub
-					
+
 				}
 			}, isLiked);
-			
-			req.doQuery();
+
 		}
 		
 		

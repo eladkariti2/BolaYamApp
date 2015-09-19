@@ -25,6 +25,7 @@ import com.application.imageholders.ImageHolder;
 import com.application.imageholders.ImageHolderBuilder;
 import com.application.picasoimageloader.PicasoHalper;
 import com.application.ui.HorizontalListView;
+import com.application.utils.CustomImageLoader;
 import com.application.utils.JsonUtil;
 
 public class BeacheDetailsActivity extends BaseActivity {
@@ -67,17 +68,8 @@ public class BeacheDetailsActivity extends BaseActivity {
 		wether.setText(beachHolder.getWhether().getDescription());
 		flag.setText(beachHolder.getWhether().getFlag().getDescription());
 		wave.setText(beachHolder.getWhether().getWave().getDescription());
-		PicasoHalper.loadImage(this, beachImg, beachHolder.getImageUrl());
-		
-//		mFriendsList.setOnItemClickListener(new OnItemClickListener() {
-//
-//			@Override
-//			public void onItemClick(AdapterView<?> parent, View view,
-//					int position, long id) {
-//				// TODO Auto-generated method stub
-//				Log.e("ELAD", "onItemClick");
-//			}
-//		});
+		CustomImageLoader loader = new CustomImageLoader(beachImg,beachHolder);
+		loader.loadImage();
 		
 		updateFriendsList();
 	}

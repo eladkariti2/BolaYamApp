@@ -33,9 +33,7 @@ import com.app.bolayam.view.SideMenuBolaYam.NavMenuItemType;
 import com.application.base.BaseFragmentActivity;
 import com.application.facebook.model.FBProfilePic;
 import com.application.facebook.util.FacebookUtil;
-import com.application.picasoimageloader.PicasoHalper;
-import com.flurry.android.ads.FlurryAdBanner;
-import com.squareup.picasso.Picasso;
+
 
 public class MainFragmentActivity extends BaseFragmentActivity {
 
@@ -53,8 +51,6 @@ public class MainFragmentActivity extends BaseFragmentActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
-		Picasso.with(this).setIndicatorsEnabled(true);
-		Picasso.with(this).setLoggingEnabled(true);
 
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main_layout_bola_yam);
@@ -101,8 +97,8 @@ public class MainFragmentActivity extends BaseFragmentActivity {
 
 	private void initBanner(String adName) {
 		// TODO Auto-generated method stub
-		FlurryAdBanner  mFlurryAdBanner = new FlurryAdBanner(this, (ViewGroup) mBannerContainer, adName);
-		mFlurryAdBanner.displayAd();
+//		FlurryAdBanner  mFlurryAdBanner = new FlurryAdBanner(this, (ViewGroup) mBannerContainer, adName);
+//		mFlurryAdBanner.displayAd();
 		
 	}
 

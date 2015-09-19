@@ -19,8 +19,10 @@ import com.application.adapters.ImageBaseAdapter.Mapper;
 import com.application.facebook.util.FacebookUtil;
 import com.application.imageholders.ImageHolder;
 import com.application.imageholders.ImageHolderBuilder;
+import com.application.imageholders.ImageLoader;
 import com.application.picasoimageloader.PicasoHalper;
 import com.application.ui.RoundedImageView;
+import com.application.utils.CustomImageLoader;
 import com.application.utils.OSUtil;
 
 public class SideMenuBolaYam extends LinearLayout {
@@ -36,8 +38,9 @@ public class SideMenuBolaYam extends LinearLayout {
 
 	public void init(){
 		
-		RoundedImageView userImage = (RoundedImageView)findViewById(OSUtil.getResourceId("user_image"));
-		PicasoHalper.loadImage(mContext, userImage, FacebookUtil.getUserProfile().getUrl());
+		final RoundedImageView userImage = (RoundedImageView)findViewById(OSUtil.getResourceId("user_image"));
+		CustomImageLoader loader = new CustomImageLoader(userImage,new ImageHolder(FacebookUtil.getUserProfile().getUrl()));
+		loader.loadImage();
 
 		ViewStub stub = (ViewStub) findViewById(R.id.drawer_list);
 		stub.setLayoutResource(R.layout.simple_navigation_list); 

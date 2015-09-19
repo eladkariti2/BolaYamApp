@@ -20,10 +20,12 @@ import android.widget.TextView;
 import com.app.bolayam.R;
 import com.application.adapters.ImageBaseAdapter;
 import com.application.adapters.ImageBaseAdapter.Mapper;
+import com.application.facebook.util.FacebookUtil;
 import com.application.imageholders.ImageHolder;
 import com.application.imageholders.ImageHolderBuilder;
 import com.application.picasoimageloader.PicasoHalper;
 import com.application.ui.RoundedImageView;
+import com.application.utils.CustomImageLoader;
 import com.application.utils.OSUtil;
 
 public class FriendsListAdapter extends BaseAdapter {
@@ -90,9 +92,9 @@ public class FriendsListAdapter extends BaseAdapter {
 				image.setBackgroundResource(OSUtil.getDrawableResourceIdentifier("user_not_friend_bg" ));
 				image.setPadding(0,0,0,0);
 			}
-			
-			PicasoHalper.loadImage(mContext, image,holder.getImageUrl());
-			
+			CustomImageLoader loader = new CustomImageLoader(image,holder);
+			loader.loadImage();
+
 		}
 		
 	}
@@ -117,7 +119,8 @@ public class FriendsListAdapter extends BaseAdapter {
 		text.setText(holder.getImageTitle());
 		
 		RoundedImageView image = (RoundedImageView) dialog.findViewById(R.id.user_pic);
-		PicasoHalper.loadImage(mContext, image, holder.getImageUrl());
+		CustomImageLoader loader = new CustomImageLoader(image,holder);
+		loader.loadImage();
 
 		View dialogButton = dialog.findViewById(R.id.go_to_profile_container);
 		dialogButton.setOnClickListener(new OnClickListener() {

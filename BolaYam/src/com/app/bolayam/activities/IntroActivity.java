@@ -9,7 +9,6 @@ import com.application.listener.AccountLoaderListener;
 import com.application.loader.ModelLoader;
 import com.application.models.AccountModel;
 import com.application.utils.AppData;
-import com.squareup.picasso.Picasso;
 
 public class IntroActivity extends BaseSplashActivity{
 
